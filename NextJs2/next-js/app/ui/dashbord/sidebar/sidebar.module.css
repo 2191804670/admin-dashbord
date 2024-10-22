@@ -1,3 +1,39 @@
 .container {
   display: flex;
+  position: sticky;
+  top: 40px;
+  flex-direction: column;
+}
+.el {
+  font-weight: bold;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.listStyle {
+  list-style: none;
+}
+
+.user {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.userdetail {
+  display: flex;
+  flex-direction: column;
+}
+.usename {
+  font-weight: 500;
+}
+.usertitle {
+  font-size: 12px;
+  color: var(--textSoft);
+}
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
 }

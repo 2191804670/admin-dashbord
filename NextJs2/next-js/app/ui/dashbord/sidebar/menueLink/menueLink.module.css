@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  padding: 10px;
+  margin: 8px 0;
+  gap: 20px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.container:hover {
+  background-color: #dedada;
+  color: #333;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.active {
+  color: #333;
+  background-color: #dedada;
+  font-weight: bold;
+  font-family: "Cairo", sans-serif;
+}

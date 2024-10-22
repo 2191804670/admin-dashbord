@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./ui/globals.css";
+import { Cairo } from "@next/font/google";
+
+const cairo = Cairo({
+  subsets: ["latin"], // You can include other subsets if needed
+  weight: ["400", "700"], // Use the weights you need
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

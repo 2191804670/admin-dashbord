@@ -8,10 +8,10 @@ import {
   MdPeople,
   MdOutlineSettings,
   MdHelpCenter,
-  MdLogout,
 } from "react-icons/md";
-
+import MenueLink from "./menueLink/menueLink";
 import styles from "../sidebar/sidebar.module.css";
+import Image from "next/image";
 
 const SideBar = () => {
   const menuItems = [
@@ -79,7 +79,31 @@ const SideBar = () => {
 
   return (
     <div className={styles.container}>
-      <ul>{menuItems.map((el, index) => el.title)}</ul>
+      <div className={styles.user}>
+        <Image
+          src="/noavatar.png"
+          alt="no avatar"
+          width={50}
+          height={50}
+          className={styles.avatar} // Apply the avatar class here
+        />
+        <div className={styles.userdetail}>
+          <span className={styles.usename}>Anas almograbi</span>
+          <span className={styles.usertitle}>Administrator</span>
+        </div>
+      </div>
+
+      <ul className={styles.listStyle}>
+        {menuItems.map((el) => (
+          <li key={el.title}>
+            <span className={styles.el}>{el.title}</span>
+
+            {el.list.map((item) => (
+              <MenueLink key={item.title} item={item} />
+            ))}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
