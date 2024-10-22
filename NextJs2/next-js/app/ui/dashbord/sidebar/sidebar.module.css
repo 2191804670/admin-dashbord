@@ -37,3 +37,21 @@
   overflow: hidden;
   object-fit: cover;
 }
+
+.logout {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.logout:hover {
+  background-color: #dedada;
+  color: #333;
+  border-radius: 10px;
+  font-weight: bold;
+}
