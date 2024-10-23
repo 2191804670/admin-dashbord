@@ -47,11 +47,13 @@
   background-color: transparent;
   color: white;
   border: none;
+  cursor: pointer;
 }
 
 .logout:hover {
   background-color: #dedada;
   color: #333;
   border-radius: 10px;
+  cursor: pointer;
   font-weight: bold;
 }
