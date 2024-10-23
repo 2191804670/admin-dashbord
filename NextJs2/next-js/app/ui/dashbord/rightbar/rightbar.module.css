@@ -1,0 +1,145 @@
+.container {
+  position: fixed;
+  margin-right: 10px;
+  /* Adjust the max-width for mobile */
+}
+
+.item {
+  background: linear-gradient(to top, #182237, #253352);
+  padding: 16px 20px; /* Slightly reduce padding for smaller screens */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.bgContainer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.bg {
+  object-fit: contain;
+  opacity: 0.2;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Reduced gap between text elements */
+}
+
+.notification {
+  font-weight: bold;
+  font-size: 14px; /* Adjust notification font size */
+}
+
+.subtitle {
+  color: var(--textSoft);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.desc {
+  color: var(--textSoft);
+  font-size: 14px;
+}
+
+.button {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: max-content;
+  background-color: #5d57c9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* MEDIA QUERY FOR RESPONSIVENESS */
+@media (max-width: 768px) {
+  .container {
+    /* Make the container full-width on tablets and smaller screens */
+    width: 90%;
+    position: relative;
+  }
+
+  .item {
+    padding: 12px 16px; /* Reduce padding for small screens */
+    margin-bottom: 16px;
+  }
+
+  .bgContainer {
+    width: 60%;
+    height: 60%; /* Make background image larger on small screens */
+  }
+
+  .text {
+    gap: 12px; /* Reduce gap between text elements */
+  }
+
+  .notification {
+    font-size: 13px; /* Reduce notification font size */
+  }
+
+  .title {
+    font-size: 18px; /* Reduce title size */
+  }
+
+  .subtitle {
+    font-size: 11px; /* Reduce subtitle size */
+  }
+
+  .desc {
+    font-size: 12px; /* Reduce description size */
+  }
+
+  .button {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%; /* Full width for very small screens */
+    padding: 10px;
+  }
+
+  .item {
+    padding: 8px 12px;
+  }
+
+  .bgContainer {
+    width: 70%; /* Further adjust background image */
+    height: 70%;
+  }
+
+  .text {
+    gap: 8px;
+  }
+
+  .notification {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .subtitle {
+    font-size: 10px;
+  }
+
+  .desc {
+    font-size: 11px;
+  }
+
+  .button {
+    padding: 6px;
+    font-size: 12px;
+  }
+}
