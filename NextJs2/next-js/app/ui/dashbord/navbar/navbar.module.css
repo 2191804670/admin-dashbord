@@ -20,8 +20,8 @@
 .input {
   background-color: transparent;
   color: var(--text);
-  border: 0;
-
+  border: none;
+  outline: none;
   border-radius: 5px;
 }
 .search {
