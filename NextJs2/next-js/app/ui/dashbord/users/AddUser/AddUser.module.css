@@ -1,6 +1,6 @@
 .container {
   margin-top: 30px;
-  background-color: rgb(36, 35, 33);
+  background-color: #2a2d35;
   display: flex;
   padding: 20px;
   border-radius: 20px;
@@ -19,7 +19,8 @@
 .form input,
 .form select,
 .form textarea {
-  width: 45%; /* Set width for input, select, and textarea */
+  width: 45%;
+  color: rgb(62, 62, 62);
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -29,6 +30,13 @@
   width: 100%; /* Textarea should span the full width */
   height: 100px; /* Adjust height for the textarea */
 }
+
+/* Set placeholder color */
+.form input::placeholder,
+.form textarea::placeholder {
+  color: rgb(62, 62, 62);
+}
+
 .btn {
   width: 50%;
   padding: 10px;
@@ -41,5 +49,4 @@
   align-self: center;
   font-weight: bold;
   font-size: 15px;
-  /* Adjust height for the textarea */
 }

@@ -10,10 +10,19 @@
   },
   "dependencies": {
     "@next/font": "^14.2.15",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "mini-css-extract-plugin": "^2.9.1",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.7.2",
     "next": "14.2.15",
+    "next-auth": "5.0.0-beta.25",
     "react": "^18",
     "react-dom": "^18",
-    "recharts": "^2.13.0"
+    "recharts": "^2.13.0",
+    "sweetalert2": "^11.14.4",
+    "use-debounce": "^9.0.4",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",
